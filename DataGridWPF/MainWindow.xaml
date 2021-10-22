@@ -1,0 +1,29 @@
+﻿<Window x:Class="DataGridWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataGridWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <DataGrid AutoGenerateColumns="False" HorizontalAlignment="Center" Name="DGUsers" CanUserAddRows="False" VerticalScrollBarVisibility="Auto" Height="200" ColumnWidth="100" RowBackground="LightBlue" AlternatingRowBackground="LightGreen">
+                <DataGrid.Columns>
+                    <!--<DataGridTextColumn x:Name="cF" Header="Фамилия" Binding="{Binding Path=f}"/>
+                    <DataGridTextColumn x:Name="cI" Header="Имя" Binding="{Binding Path=i}"/>
+                    <DataGridTextColumn x:Name="cO" Header="Отчество" Binding="{Binding Path=o}"/>
+                    <DataGridTextColumn x:Name="cG" Header="Пол" Binding="{Binding Path=g}"/>
+                    <DataGridTextColumn x:Name="cD" Header="Дата рождения" Binding="{Binding Path=d}"/>-->
+                </DataGrid.Columns>
+            </DataGrid>
+            <StackPanel>
+                <CheckBox Name="Cbf" Content="Фамилия" IsChecked="True" Checked="Cbf_Checked" Unchecked="Cbf_Unchecked"/>
+                <CheckBox Name="Cbi" Content="Имя" IsChecked="True" Checked="Cbi_Checked" Unchecked="Cbi_Unchecked"/>
+                <CheckBox Name="Cbo" Content="Отчетсво" IsChecked="True" Checked="Cbo_Checked" Unchecked="Cbo_Unchecked"/>
+                <CheckBox Name="Cbg" Content="Пол" IsChecked="True" Checked="Cbg_Checked" Unchecked="Cbg_Unchecked"/>
+                <CheckBox Name="Cbd" Content="Дата рождения" IsChecked="True" Checked="Cbd_Checked" Unchecked="Cbd_Unchecked"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
